@@ -1,0 +1,14 @@
+{
+  "name": "avatar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loading-bar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "avatar-initials": "^5.0.0"
+  }
+}
