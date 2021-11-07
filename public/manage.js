@@ -68,3 +68,18 @@ const renderRight=() => {
     renderAvatars(mappedData)
 }
 render()
+const displayAvatars=()=>{
+   const a= document.getElementById('main')
+   a.style.display=  a.style.display==='none'?'flex':'none'
+}
+
+
+const images= document.querySelectorAll('.img')
+for (const image of images) {
+    image.addEventListener('mouseover',()=>{
+       image.style.opacity='0.2'
+    })
+    image.addEventListener('mouseleave',()=>{
+        image.style.opacity='1'
+     })
+}

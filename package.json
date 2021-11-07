@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "avatar-initials": "^5.0.0"
+    "avatar-initials": "^5.0.0",
+    "firebase-tools": "^9.21.0"
   }
 }
