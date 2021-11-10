@@ -101,7 +101,6 @@ const initAllImgs = () => {
 };
 
 const initCurrentUser = () => {
-  console.log(data);
   let bar = new ldBar(`#current_loadbar`);
   let Fname = document.getElementById(`current_Fname`);
   let Lname = document.getElementById(`current_Lname`);
@@ -121,3 +120,7 @@ const initCurrentUser = () => {
 render();
 initCurrentUser();
 initAllImgs();
+
+const all_imgs=document.getElementById('third_loadbar').children[0]
+console.log(all_imgs);
+
