@@ -67,8 +67,6 @@ const render = () => {
   const mappedData = avatars.map(
     (val, index) => keys[(index + offset) % keys.length]
   );
-
-  currentData = mappedData;
   current_array = mappedData;
   renderAvatars(mappedData);
   renderImages();
@@ -102,7 +100,15 @@ const initAllImgs = () => {
   }
 };
 
-const initCurrentImg = () => {
+const initCurrentUser = () => {
+  console.log(data);
+  let bar = new ldBar(`#current_loadbar`);
+  let Fname = document.getElementById(`current_Fname`);
+  let Lname = document.getElementById(`current_Lname`);
+  Fname.innerHTML = data.current.Fname.slice(0, 10);
+  Lname.innerHTML = data.current.Lname.slice(0, 10);
+  bar.set(data.current.value);
+
   currentImage.addEventListener("mouseover", () => {
     currentImage.style.opacity = "0.2";
   });
@@ -113,5 +119,5 @@ const initCurrentImg = () => {
 };
 
 render();
-initCurrentImg();
+initCurrentUser();
 initAllImgs();
